@@ -15,6 +15,10 @@
 		2C141856221A47CA00F4CB70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C141855221A47CA00F4CB70 /* main.m */; };
 		2C141860221A47CA00F4CB70 /* TWTableviewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C14185F221A47CA00F4CB70 /* TWTableviewDemoTests.m */; };
 		2C14186B221A47CA00F4CB70 /* TWTableviewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C14186A221A47CA00F4CB70 /* TWTableviewDemoUITests.m */; };
+		2C14187A221A567A00F4CB70 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C141879221A567A00F4CB70 /* TableViewCell.m */; };
+		2C14187C221AA43F00F4CB70 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C14187B221AA43F00F4CB70 /* Data.plist */; };
+		2C14187F221AAA7700F4CB70 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C14187E221AAA7700F4CB70 /* DataModel.m */; };
+		ABBE62F88E1895BC453DFA58 /* libPods-TWTableviewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0301AD0ABC83DCE30DBC73F /* libPods-TWTableviewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		2C141866221A47CA00F4CB70 /* TWTableviewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWTableviewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C14186A221A47CA00F4CB70 /* TWTableviewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWTableviewDemoUITests.m; sourceTree = "<group>"; };
 		2C14186C221A47CA00F4CB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C141878221A567A00F4CB70 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		2C141879221A567A00F4CB70 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2C14187B221AA43F00F4CB70 /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		2C14187D221AAA7700F4CB70 /* DataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		2C14187E221AAA7700F4CB70 /* DataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		4C887CEFE01412A569755DDC /* Pods-TWTableviewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWTableviewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWTableviewDemo/Pods-TWTableviewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9145A38D4A850F1BDB30E048 /* Pods-TWTableviewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWTableviewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWTableviewDemo/Pods-TWTableviewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D0301AD0ABC83DCE30DBC73F /* libPods-TWTableviewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TWTableviewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBE62F88E1895BC453DFA58 /* libPods-TWTableviewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		198F9FD42AAE7CDA730883A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9145A38D4A850F1BDB30E048 /* Pods-TWTableviewDemo.debug.xcconfig */,
+				4C887CEFE01412A569755DDC /* Pods-TWTableviewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2C14183A221A47C800F4CB70 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				2C14185E221A47CA00F4CB70 /* TWTableviewDemoTests */,
 				2C141869221A47CA00F4CB70 /* TWTableviewDemoUITests */,
 				2C141844221A47C800F4CB70 /* Products */,
+				198F9FD42AAE7CDA730883A5 /* Pods */,
+				DCAFA6D299928BF55BF1DC0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +129,11 @@
 				2C141847221A47C800F4CB70 /* AppDelegate.m */,
 				2C141849221A47C800F4CB70 /* ViewController.h */,
 				2C14184A221A47C800F4CB70 /* ViewController.m */,
+				2C141878221A567A00F4CB70 /* TableViewCell.h */,
+				2C141879221A567A00F4CB70 /* TableViewCell.m */,
+				2C14187D221AAA7700F4CB70 /* DataModel.h */,
+				2C14187E221AAA7700F4CB70 /* DataModel.m */,
+				2C14187B221AA43F00F4CB70 /* Data.plist */,
 				2C14184C221A47C800F4CB70 /* Main.storyboard */,
 				2C14184F221A47CA00F4CB70 /* Assets.xcassets */,
 				2C141851221A47CA00F4CB70 /* LaunchScreen.storyboard */,
@@ -132,6 +161,14 @@
 			path = TWTableviewDemoUITests;
 			sourceTree = "<group>";
 		};
+		DCAFA6D299928BF55BF1DC0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0301AD0ABC83DCE30DBC73F /* libPods-TWTableviewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C14186F221A47CA00F4CB70 /* Build configuration list for PBXNativeTarget "TWTableviewDemo" */;
 			buildPhases = (
+				7BC5A56961BDF460D25F9B97 /* [CP] Check Pods Manifest.lock */,
 				2C14183F221A47C800F4CB70 /* Sources */,
 				2C141840221A47C800F4CB70 /* Frameworks */,
 				2C141841221A47C800F4CB70 /* Resources */,
@@ -237,6 +275,7 @@
 			files = (
 				2C141853221A47CA00F4CB70 /* LaunchScreen.storyboard in Resources */,
 				2C141850221A47CA00F4CB70 /* Assets.xcassets in Resources */,
+				2C14187C221AA43F00F4CB70 /* Data.plist in Resources */,
 				2C14184E221A47C800F4CB70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,12 +296,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BC5A56961BDF460D25F9B97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TWTableviewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C14183F221A47C800F4CB70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C14184B221A47C800F4CB70 /* ViewController.m in Sources */,
+				2C14187F221AAA7700F4CB70 /* DataModel.m in Sources */,
+				2C14187A221A567A00F4CB70 /* TableViewCell.m in Sources */,
 				2C141856221A47CA00F4CB70 /* main.m in Sources */,
 				2C141848221A47C800F4CB70 /* AppDelegate.m in Sources */,
 			);
@@ -431,9 +493,11 @@
 		};
 		2C141870221A47CA00F4CB70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9145A38D4A850F1BDB30E048 /* Pods-TWTableviewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MH2RECW3JV;
 				INFOPLIST_FILE = TWTableviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +511,11 @@
 		};
 		2C141871221A47CA00F4CB70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C887CEFE01412A569755DDC /* Pods-TWTableviewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MH2RECW3JV;
 				INFOPLIST_FILE = TWTableviewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
